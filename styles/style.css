@@ -1,18 +1,24 @@
-* {
+/* * {
   border: 2px solid red;
-}
+} */
 
 html {
   box-sizing: border-box;
   height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: orangered;
   display: flex;
   flex-direction: column;
+}
+header {
+  text-align: center;
+  background-color: darkslategrey;
 }
 
 .content {
@@ -24,8 +30,33 @@ body {
 .interface {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: blue;
   width: 20%;
+}
+
+.range-slider {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: orange;
+  width: 100%;
+}
+
+#confirm-button {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  transition: 0.1s;
+}
+
+#confirm-button:hover {
+  background-color: white;
+  border: 2px solid black;
+}
+
+#confirm-button:active {
+  background-color: brown;
 }
 
 #canvas {
@@ -33,9 +64,23 @@ body {
   grid-template-columns: repeat(var(--grid-size), 1fr);
   height: 512px;
   width: 1024px;
-  background-color: gray;
+  border: 18px solid blue;
+  box-shadow: 10px 10px 5px black;
+  background-color: whitesmoke;
+  align-self: center;
 }
 
 .canvas-div {
   border: 1px solid black;
+  background-color: antiquewhite;
+}
+
+.canvas-div-after {
+  background-color: red;
+  /* border: 1px solid black; */
+}
+
+.canvas-div-green {
+  background-color: green;
+  /* border: 1px solid black; */
 }
